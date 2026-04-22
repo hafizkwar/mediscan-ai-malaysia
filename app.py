@@ -30,7 +30,7 @@ if uploaded_file and api_key:
         with st.spinner("Analyzing with Gemini AI..."):
             try:
                 genai.configure(api_key=api_key)
-                model = genai.GenerativeModel("gemini-1.5-pro-latest")
+                model = genai.GenerativeModel("gemini-2.0-flash-exp")
                 
                 prompt = """You are an AI medical assistant helping rural healthcare workers in Malaysia.
                 Analyze this medical image and provide:
