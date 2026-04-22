@@ -30,7 +30,7 @@ if uploaded_file and api_key:
 
     if st.button("🔍 Analyze Image"):
         with st.spinner("Analyzing with Gemini AI..."):
-            model = genai.GenerativeModel("gemini-1.5-flash")
+            model = genai.GenerativeModel("gemini-2.0-flash")
             prompt = """You are an AI medical assistant helping rural healthcare workers in Malaysia.
             Analyze this medical image and provide:
             1. What you observe in the image
