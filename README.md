@@ -1,140 +1,107 @@
-# Generative AI on Google Cloud
+# 🏥 MediScan AI Malaysia
 
-> **[Gemini 3.1 Pro](https://cloud.google.com/vertex-ai/generative-ai/docs/models/gemini/3-1-pro) has been released!**
->
-> Here are the latest notebooks and demos using the new model:
->
-> - [Intro to Gemini 3.1 Pro](gemini/getting-started/intro_gemini_3_1_pro.ipynb)
->
-<!-- markdownlint-disable MD033 -->
+> AI-powered medical image analysis for rural Malaysian healthcare workers — built with Google Gemini API
 
-This repository contains notebooks, code samples, sample apps, and other resources that demonstrate how to use, develop and manage generative AI workflows using [Generative AI on Google Cloud](https://cloud.google.com/ai/generative-ai) with [Vertex AI](https://cloud.google.com/vertex-ai).
+[![Live Demo](https://img.shields.io/badge/Live-Demo-green)](https://mediscan-ai-malaysia.run.app)
+[![Track](https://img.shields.io/badge/Track-Healthcare-blue)]()
+[![Built With](https://img.shields.io/badge/Built%20With-Gemini%20API-orange)]()
 
-## Using this repository
+---
 
-[![Applied AI Summit: The cloud toolkit for generative AI](https://img.youtube.com/vi/xT7WW2SKLfE/hqdefault.jpg)](https://www.youtube.com/watch?v=xT7WW2SKLfE)
+## 🩺 Problem
 
-<table>
-  <tr>
-    <th></th>
-    <th style="text-align: center;">Description</th>
-  </tr>
-  <tr>
-    <td>
-      <img src="https://storage.googleapis.com/github-repo/img/gemini/Spark__Gradient_Alpha_100px.gif" width="45px" alt="Gemini">
-      <br>
-      <a href="gemini/"><code>gemini/</code></a>
-    </td>
-    <td>
-      Discover Gemini through starter notebooks, use cases, function calling, sample apps, and more.
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <img src="https://www.gstatic.com/images/branding/gcpiconscolors/service_discovery/v1/24px.svg" width="40px" alt="Search">
-      <br>
-      <a href="search/"><code>search/</code></a>
-    </td>
-    <td>Use this folder if you're interested in using <a href="https://cloud.google.com/enterprise-search">Vertex AI Search</a>, a Google-managed solution to help you rapidly build search engines for websites and across enterprise data. (Formerly known as Enterprise Search on Generative AI App Builder).</td>
-  </tr>
-  <tr>
-    <td>
-      <img src="https://fonts.gstatic.com/s/i/short-term/release/googlesymbols/nature_people/default/40px.svg" alt="RAG Grounding">
-      <br>
-      <a href="rag-grounding/"><code>rag-grounding/</code></a>
-    </td>
-    <td>Use this folder for information on Retrieval Augmented Generation (RAG) and Grounding with Vertex AI. This is an index of notebooks and samples across other directories focused on this topic.</td>
-  </tr>
-  <tr>
-    <td>
-      <img src="https://fonts.gstatic.com/s/i/short-term/release/googlesymbols/image/default/40px.svg" alt="Vision">
-      <br>
-      <a href="vision/"><code>vision/</code></a>
-    </td>
-    <td>
-      Use this folder if you're interested in building your own solutions from scratch using features from Imagen on Vertex AI (Vertex AI Imagen API).
-      These are the features that Imagen on Vertex AI offers:
-      <ul>
-        <li>Image generation</li>
-        <li>Image editing</li>
-        <li>Visual captioning</li>
-        <li>Visual question answering</li>
-      </ul>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <img src="https://fonts.gstatic.com/s/i/short-term/release/googlesymbols/mic/default/40px.svg" alt="Speech">
-      <br>
-      <a href="audio/"><code>audio/</code></a>
-    </td>
-    <td>
-      Use this folder if you're interested in building your own solutions from scratch using features from Chirp, a version of Google's Universal Speech Model (USM) on Vertex AI (Vertex AI Chirp API).
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <img src="https://fonts.gstatic.com/s/i/short-term/release/googlesymbols/build/default/40px.svg" alt="Setup Env">
-      <br>
-      <a href="setup-env/"><code>setup-env/</code></a>
-    </td>
-    <td>Instructions on how to set up Google Cloud, the Vertex AI Python SDK, and notebook environments on Google Colab and Vertex AI Workbench.</td>
-  </tr>
-  <tr>
-    <td>
-      <img src="https://fonts.gstatic.com/s/i/short-term/release/googlesymbols/media_link/default/40px.svg" alt="Resources">
-      <br>
-      <a href="RESOURCES.md"><code>RESOURCES.md</code></a>
-    </td>
-    <td>Learning resources (e.g. blogs, YouTube playlists) about Generative AI on Google Cloud.</td>
-  </tr>
-</table>
-<!-- markdownlint-enable MD033 -->
+Over 3 million Malaysians in rural areas lack access to specialist doctors.
+Frontline health workers at rural clinics often have no tools to assist with
+medical image interpretation — leading to delayed diagnoses and poor outcomes.
 
-## Related Repositories
+---
 
-- ✨ [Agent Development Kit (ADK) Samples](https://github.com/google/adk-samples): This repository provides ready-to-use agents built on top of the Agent Development Kit, designed to accelerate your development process. These agents cover a range of common use cases and complexities, from simple conversational bots to complex multi-agent workflows.
-- [🚀 Agent Starter Pack](https://github.com/GoogleCloudPlatform/agent-starter-pack)
-  - A collection of production-ready Generative AI Agent templates built for Google Cloud.
-  - It accelerates development by providing a holistic, production-ready solution, addressing common challenges (Deployment & Operations, Evaluation, Customization, Observability) in building and deploying Gen AI agents.
-- [Gemini Cookbook](https://github.com/google-gemini/cookbook/)
-- [Google Cloud Applied AI Engineering](https://github.com/GoogleCloudPlatform/applied-ai-engineering-samples)
-- [Vertex AI GenMedia Creative Studio](https://github.com/GoogleCloudPlatform/vertex-ai-creative-studio) - Experience Google's generative media foundational models + custom workflows.
-- [MCP Servers for GenMedia](https://goo.gle/vertex-genmedia-mcp) - Empower your agents with generative media tools.
-- [Generative AI for Marketing using Google Cloud](https://github.com/GoogleCloudPlatform/genai-for-marketing)
-- [Generative AI for Developer Productivity](https://github.com/GoogleCloudPlatform/genai-for-developers)
-- Vertex AI Core
-  - [Vertex AI Samples](https://github.com/GoogleCloudPlatform/vertex-ai-samples)
-  - [MLOps with Vertex AI](https://github.com/GoogleCloudPlatform/mlops-with-vertex-ai)
-  - [Developing NLP solutions with T5X and Vertex AI](https://github.com/GoogleCloudPlatform/t5x-on-vertex-ai)
-  - [AlphaFold batch inference with Vertex AI Pipelines](https://github.com/GoogleCloudPlatform/vertex-ai-alphafold-inference-pipeline)
-  - [Serving Spark ML models using Vertex AI](https://github.com/GoogleCloudPlatform/vertex-ai-spark-ml-serving)
-  - [Sensitive Data Protection (Cloud DLP) for Vertex AI Generative Models (PaLM2)](https://github.com/GoogleCloudPlatform/Sensitive-Data-Protection-for-Vertex-AI-PaLM2)
-- Conversational AI
-  - [Contact Center AI Samples](https://github.com/GoogleCloudPlatform/contact-center-ai-samples)
-  - [Reimagining Customer Experience 360](https://github.com/GoogleCloudPlatform/dialogflow-ccai-omnichannel)
-- Document AI
-  - [Document AI Samples](https://github.com/GoogleCloudPlatform/document-ai-samples)
-- Gemini in Google Cloud
-  - [Cymbal Superstore](https://github.com/GoogleCloudPlatform/cymbal-superstore)
-- Cloud Databases
-  - [Gen AI Databases Retrieval App](https://github.com/GoogleCloudPlatform/genai-databases-retrieval-app)
-- Other
-  - [ai-on-gke](https://github.com/GoogleCloudPlatform/ai-on-gke)
-  - [ai-infra-cluster-provisioning](https://github.com/GoogleCloudPlatform/ai-infra-cluster-provisioning)
-  - [solutions-genai-llm-workshop](https://github.com/GoogleCloudPlatform/solutions-genai-llm-workshop)
-  - [terraform-genai-doc-summarization](https://github.com/GoogleCloudPlatform/terraform-genai-doc-summarization)
-  - [terraform-genai-knowledge-base](https://github.com/GoogleCloudPlatform/terraform-genai-knowledge-base)
-  - [genai-product-catalog](https://github.com/GoogleCloudPlatform/genai-product-catalog)
-  - [solutionbuilder-terraform-genai-doc-summarization](https://github.com/GoogleCloudPlatform/solutionbuilder-terraform-genai-doc-summarization)
-  - [solutions-viai-edge-provisioning-configuration](https://github.com/GoogleCloudPlatform/solutions-viai-edge-provisioning-configuration)
-  - [mis-ai-accelerator](https://github.com/GoogleCloudPlatform/mis-ai-accelerator)
-  - [dataflow-opinion-analysis](https://github.com/GoogleCloudPlatform/dataflow-opinion-analysis)
-  - [genai-beyond-basics](https://github.com/meteatamel/genai-beyond-basics)
-  - [Gemini by Example](https://geminibyexample.com)
+## 💡 Solution
 
-## Contributing
+**MediScan AI Malaysia** is a web application that allows frontline health
+workers to upload medical images (X-rays, skin conditions, wound photos) and
+receive instant AI-assisted analysis powered by **Google Gemini API**.
 
+No specialist required. No waiting. Just upload and get insights.
+
+---
+
+## ✨ Features
+
+- 📸 Upload any medical image (X-ray, skin, wound)
+- 🤖 Instant AI analysis powered by Gemini 1.5 Pro
+- 🇲🇾 Supports Bahasa Malaysia & English
+- 📋 Generates structured clinical notes
+- ☁️ Deployed on Google Cloud Run
+
+---
+
+## 🛠️ Tech Stack
+
+| Layer | Technology |
+|-------|-----------|
+| AI Model | Google Gemini 1.5 Pro (via AI Studio) |
+| Frontend | Streamlit |
+| Backend | Python |
+| Deployment | Google Cloud Run |
+| Version Control | GitHub |
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Python 3.11+
+- Google AI Studio API Key ([Get one free](https://aistudio.google.com))
+
+### Installation
+
+```bash
+git clone https://github.com/hafizkwar/mediscan-ai-malaysia.git
+cd mediscan-ai-malaysia/gemini/sample-apps/gemini-streamlit-cloudrun
+pip install -r requirements.txt
+```
+
+### Run Locally
+
+```bash
+export GOOGLE_API_KEY=your_api_key_here
+streamlit run app.py
+```
+
+---
+
+## ☁️ Deployment
+
+Deployed live on Google Cloud Run:
+🔗 **https://mediscan-ai-malaysia.run.app**
+
+---
+
+## 🎯 Hackathon
+
+**Project 2030: MyAI Future Hackathon**
+- Organized by: Google Developer Groups on Campus UTM
+- Track: **Healthcare**
+- Team: Hafiz Kamar
+
+---
+
+## 🇲🇾 Impact
+
+> "Malaysia Madani — Berkhidmat Untuk Negara"
+
+This project directly supports **Malaysia's digital health transformation**
+by bringing AI-assisted diagnostics to underserved rural communities,
+aligned with the **MyDigital Blueprint** and **Sustainable Development Goal 3**
+(Good Health and Well-Being).
+
+---
+
+## 📄 License
+
+This project is based on [GoogleCloudPlatform/generative-ai](https://github.com/GoogleCloudPlatform/generative-ai)
+and is licensed under the Apache 2.0 License.
 Contributions welcome! See the [Contributing Guide](https://github.com/GoogleCloudPlatform/generative-ai/blob/main/CONTRIBUTING.md).
 
 ## Getting help
