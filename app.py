@@ -9,7 +9,8 @@ st.title("🏥 MediScan AI Malaysia")
 st.subheader("AI-Powered Medical Image Analysis for Rural Healthcare Workers")
 st.markdown("---")
 
-api_key = st.sidebar.text_input("Enter your Gemini API Key", type="password")
+import os
+api_key = st.secrets.get("GOOGLE_API_KEY") or st.sidebar.text_input("Enter your Gemini API Key", type="password")
 
 st.markdown("### Upload a Medical Image")
 uploaded_file = st.file_uploader("Upload an X-ray, skin condition, or wound image", type=["jpg", "jpeg", "png"])
