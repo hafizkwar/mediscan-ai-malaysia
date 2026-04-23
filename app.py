@@ -41,7 +41,7 @@ if uploaded_file and api_key:
                 Important: This is for educational assistance only."""
 
                 response = client.models.generate_content(
-                    model="gemini-2.0-flash",
+                    model="gemini-2.5-flash",
                     contents=[
                         prompt,
                         types.Part.from_bytes(data=img_bytes, mime_type="image/png")
