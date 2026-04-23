@@ -3,14 +3,18 @@ from google import genai
 from google.genai import types
 from PIL import Image
 import io
+import os
 
 st.set_page_config(page_title="MediScan AI Malaysia", page_icon="🏥", layout="centered")
 st.title("🏥 MediScan AI Malaysia")
 st.subheader("AI-Powered Medical Image Analysis for Rural Healthcare Workers")
 st.markdown("---")
 
-import os
-api_key = st.secrets.get("GOOGLE_API_KEY") or st.sidebar.text_input("Enter your Gemini API Key", type="password")
+# Get API key from secrets or sidebar
+try:
+    api_key = st.secrets["GOOGLE_API_KEY"]
+except:
+    api_key = st.sidebar.text_input("Enter your Gemini API Key", type="password")
 
 st.markdown("### Upload a Medical Image")
 uploaded_file = st.file_uploader("Upload an X-ray, skin condition, or wound image", type=["jpg", "jpeg", "png"])
